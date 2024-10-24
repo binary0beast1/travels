@@ -1,0 +1,265 @@
+body,
+main {
+  font-family: "Dancing Script", cursive !important;
+  background: linear-gradient(#51e2f5, #9df9ef, #edf756, #ffa8b6) !important;
+  font-size: xx-large !important;
+}
+
+/* var */
+:root {
+  --tunisian-flag: linear-gradient(45deg, #ff0000, #ffffff, #ff0000);
+  --china-flag: linear-gradient(45deg, #ff0000, #ffd700);
+  --alger-flag: linear-gradient(45deg, #ffffff 30%, #3ad49c, rgb(234, 77, 77));
+  --USA-flag: linear-gradient(45deg, rgb(234, 77, 77) 30%, #348bc5, #ffffff);
+}
+
+.logo {
+  transition: transform 1s; /* Smooth transition for rotation */
+}
+
+.logo:hover {
+  transform: rotate(360deg); /* Rotate the logo on hover */
+}
+
+.gradient-bg {
+  background: linear-gradient(to right, blue, pink);
+  border: none;
+}
+
+.here {
+  background-color: azure;
+  border-radius: 14%;
+  padding: 40px;
+  text-align: center;
+}
+.plane {
+  width: 300px;
+  height: 300px;
+}
+.ALGERIA-image:hover .im-hov {
+  display: block;
+}
+.card-ALGER button {
+  background: var(--alger-flag);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: xx-large;
+  font-weight: bold;
+}
+.back {
+  background: var(--alger-flag);
+  border: 8px double rgb(0, 0, 0) !important;
+  padding: 20px;
+}
+.back2 {
+  background: var(--tunisian-flag);
+  border: 8px double rgb(0, 0, 0) !important;
+  padding: 20px;
+}
+.back3 {
+  background: var(--china-flag);
+  border: 8px double rgb(0, 0, 0) !important;
+  padding: 20px;
+}
+.back4 {
+  background: var(--USA-flag);
+  border: 8px double rgb(0, 0, 0) !important;
+  padding: 20px;
+}
+.card-tunisia button {
+  background: var(--tunisian-flag);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: xx-large;
+}
+.card-china button {
+  background: var(--china-flag);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: xx-large;
+}
+/* Hover effect for the icon */
+.bi {
+  transition: transform 0.3s ease;
+}
+.destination-card:hover .bi {
+  transform: scale(1.5);
+}
+.card,
+.alger {
+  width: max-content;
+}
+.des {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 789px) {
+  .des {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.card {
+  margin: auto;
+  background-color: #d7d4d4;
+}
+.container {
+  width: max-content;
+}
+article {
+  display: flex;
+}
+/* Card hover shadow effect */
+.destination-card {
+  transition: box-shadow 0.3s ease;
+}
+.destination-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Image hover effect */
+.hover-image {
+  display: none;
+}
+.destination-card:hover .default-image {
+  display: none;
+}
+.destination-card:hover .hover-image {
+  display: block;
+}
+.hide {
+  display: none;
+  background-color: red;
+  margin: 20px;
+}
+.show:hover .hide {
+  display: block;
+}
+.bg-success {
+  --bs-bg-opacity: 0.5;
+  background-color: rgba(
+    var(--bs-success-rgb),
+    var(--bs-bg-opacity)
+  ) !important;
+}
+hr {
+  border-top: 5px dotted black !important;
+  margin: 31px !important;
+}
+.fas {
+  font-size: 100px; /* Large text */
+  font-weight: bold; /* Bold text */
+}
+
+.icon-color-person {
+  color: #007bff; /* Blue for person */
+}
+
+.icon-color-baggage {
+  color: #28a745; /* Green for baggage */
+}
+
+.icon-color-plane {
+  color: #dc3545; /* Red for airplane */
+}
+
+.section-padding {
+  padding: 2rem; /* Padding for better spacing */
+}
+
+.bg-lightblue {
+  background-color: #f0f8ff; /* Light blue background */
+}
+.contact {
+  background: linear-gradient(135deg, #f3f4f6, #e0e7ff);
+  padding: 20px;
+  border: 2px black dashed;
+}
+/* .titre {
+  background: linear-gradient(
+    45deg,
+    pink 20%,
+    rgb(38, 166, 251) 20%,
+    rgb(0, 0, 0) 20%,
+    rgb(194, 184, 184) 40%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: large;
+  opacity: 100%;
+} */
+.gradient-text {
+  background: linear-gradient(45deg, #38a1db, #ff4081);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: xx-large;
+  text-transform: uppercase;
+}
+footer {
+  position: relative;
+  margin: 0px;
+  background-color: #3586ff;
+  padding: 10px;
+}
+footer .wave {
+  position: absolute;
+  /* top: -90px; */
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../wave.png);
+  background-size: 1000px 100px;
+  top: -55px;
+  margin-top: 20px;
+  animation: move 4s linear infinite;
+}
+
+footer .wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: move 4s linear infinite;
+  top: -55px;
+}
+@keyframes move {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+footer .wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  top: -55px;
+  animation: move-2 4s linear infinite;
+}
+@keyframes move-2 {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+.immg {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.hov {
+  transition: box-shadow 0.2s linear;
+  border: 8px double black;
+  border-radius: 75%;
+  border-radius: 20%;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5) !important;
+  background: linear-gradient(#51e2f5, #9df9ef, #edf756, #ffa8b6) !important;
+  margin: 10px !important;
+}
+
+.hov:hover {
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5) !important;
+}
